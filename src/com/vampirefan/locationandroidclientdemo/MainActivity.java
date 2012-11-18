@@ -94,7 +94,7 @@ public class MainActivity extends Activity {
 				try {
 					JSONObject fingerFrame = new JSONObject();
 					JSONArray wapInfo = new JSONArray();
-					fingerFrame.put("bearing", "0");
+					fingerFrame.put("bearing", 0);
 					fingerFrame.put("locationId", "X62010010117");
 					fingerFrame.put("wapInfo", wapInfo);
 					wapInfo.put(new JSONObject().put("bssid", "00602F3A07BC").put("rssid", 56));
@@ -118,7 +118,7 @@ public class MainActivity extends Activity {
 				try {
 					JSONObject locateFrame = new JSONObject();
 					JSONArray wapInfo = new JSONArray();
-					locateFrame.put("bearing", "0");
+					locateFrame.put("bearing", 0);
 					locateFrame.put("wapInfo", wapInfo);
 					wapInfo.put(new JSONObject().put("bssid", "00602F3A07BC").put("rssid", 56));
 					wapInfo.put(new JSONObject().put("bssid", "00602F3A07BD").put("rssid", 56));
